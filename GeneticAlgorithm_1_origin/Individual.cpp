@@ -7,3 +7,36 @@
 //
 
 #include "Individual.hpp"
+#include <stdio.h>
+#include <vector>
+#include <random>
+using namespace std;
+
+Individual::Individual(int chromosomeLength)
+{
+    chromosome_ = *new vector<int>();
+    double uniformRandomNumber;
+    for ( int gene = 0; gene < chromosomeLength; gene++ )
+    {
+        uniformRandomNumber = generateRandomUniform(0.0, 10.0);
+        if ( uniformRandomNumber < 5 )
+        {
+            chromosome_[gene] = 0;
+        }
+        else
+        {
+            chromosome_[gene] = 1;
+        }
+    }
+}
+
+double Individual::generateRandomUniform(double from, double to)
+{
+    double result = 0.0;
+    std::random_device rand_dev;
+    std::mt19937 generator(rand_dev());
+    std::uniform_real_distribution<double> distr(from, to);
+    result = distr(generator);
+    return result;
+}
+

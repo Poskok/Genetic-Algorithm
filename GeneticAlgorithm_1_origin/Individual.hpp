@@ -18,10 +18,12 @@ class Individual
 {
 public:
     Individual(int chromosomeLength);
-    Individual(vector<int> chomosomes);
+    Individual(vector<int> chromosomes):
+                        chromosome_(chromosomes) {}
 private:
     vector<int> chromosome_;
     double fitness = -1;
+    double generateRandomUniform(double from, double to);
 };
 
 #endif /* Individual_hpp */
