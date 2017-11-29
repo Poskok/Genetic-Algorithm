@@ -20,6 +20,7 @@ public:
     Individual(int chromosomeLength);
     Individual(vector<int> chromosomes):
                         chromosome_(chromosomes) {}
+    vector<int> getChromosomes();
 private:
     vector<int> chromosome_;
     double fitness = -1;

@@ -30,6 +30,11 @@ Individual::Individual(int chromosomeLength)
     }
 }
 
+vector<int> Individual::getChromosomes()
+{
+    return chromosome_;
+}
+
 double Individual::generateRandomUniform(double from, double to)
 {
     double result = 0.0;
