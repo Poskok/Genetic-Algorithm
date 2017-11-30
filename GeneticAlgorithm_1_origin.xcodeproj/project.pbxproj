@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		488BCCA21FCEF83C00D4F258 /* Individual.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 488BCCA01FCEF83C00D4F258 /* Individual.cpp */; };
 		488BCCA51FCF774800D4F258 /* Individual_I.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 488BCCA31FCF774800D4F258 /* Individual_I.cpp */; };
+		488BCCA81FCFFA5800D4F258 /* Population.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 488BCCA61FCFFA5800D4F258 /* Population.cpp */; };
 		48C1DB741FCEF4DB00832CB4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48C1DB731FCEF4DB00832CB4 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,8 @@
 		488BCCA11FCEF83C00D4F258 /* Individual.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Individual.hpp; sourceTree = "<group>"; };
 		488BCCA31FCF774800D4F258 /* Individual_I.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Individual_I.cpp; sourceTree = "<group>"; };
 		488BCCA41FCF774800D4F258 /* Individual_I.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Individual_I.hpp; sourceTree = "<group>"; };
+		488BCCA61FCFFA5800D4F258 /* Population.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Population.cpp; sourceTree = SOURCE_ROOT; };
+		488BCCA71FCFFA5800D4F258 /* Population.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Population.hpp; sourceTree = SOURCE_ROOT; };
 		48C1DB701FCEF4DB00832CB4 /* GeneticAlgorithm_1_origin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GeneticAlgorithm_1_origin; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C1DB731FCEF4DB00832CB4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +71,8 @@
 				488BCCA11FCEF83C00D4F258 /* Individual.hpp */,
 				488BCCA31FCF774800D4F258 /* Individual_I.cpp */,
 				488BCCA41FCF774800D4F258 /* Individual_I.hpp */,
+				488BCCA61FCFFA5800D4F258 /* Population.cpp */,
+				488BCCA71FCFFA5800D4F258 /* Population.hpp */,
 			);
 			path = GeneticAlgorithm_1_origin;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 			files = (
 				488BCCA21FCEF83C00D4F258 /* Individual.cpp in Sources */,
 				488BCCA51FCF774800D4F258 /* Individual_I.cpp in Sources */,
+				488BCCA81FCFFA5800D4F258 /* Population.cpp in Sources */,
 				48C1DB741FCEF4DB00832CB4 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
