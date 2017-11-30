@@ -11,10 +11,10 @@
 
 #include <stdio.h>
 #include <vector>
-
+#include "./Individual_I.hpp"
 using namespace std;
 
-class Individual
+class Individual : public Individual_I
 {
 public:
     Individual(int chromosomeLength);

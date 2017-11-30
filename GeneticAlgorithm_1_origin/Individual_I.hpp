@@ -10,5 +10,14 @@
 #define Individual_I_hpp
 
 #include <stdio.h>
+#include <vector>
+
+using namespace std;
+
+class Individual_I
+{
+public:
+    virtual vector<int> getChromosomes() = 0;
+};
 
 #endif /* Individual_I_hpp */
