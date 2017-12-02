@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		485CC3711FD326EB0008133F /* libboost_serialization.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 485CC3701FD326EB0008133F /* libboost_serialization.dylib */; };
 		488BCCA21FCEF83C00D4F258 /* Individual.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 488BCCA01FCEF83C00D4F258 /* Individual.cpp */; };
 		488BCCA51FCF774800D4F258 /* Individual_I.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 488BCCA31FCF774800D4F258 /* Individual_I.cpp */; };
 		488BCCAB1FCFFD5500D4F258 /* Population.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 488BCCA91FCFFD5500D4F258 /* Population.cpp */; };
@@ -26,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		485CC3701FD326EB0008133F /* libboost_serialization.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_serialization.dylib; path = ../../../../../usr/local/lib/libboost_serialization.dylib; sourceTree = "<group>"; };
 		488BCCA01FCEF83C00D4F258 /* Individual.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Individual.cpp; sourceTree = "<group>"; };
 		488BCCA11FCEF83C00D4F258 /* Individual.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Individual.hpp; sourceTree = "<group>"; };
 		488BCCA31FCF774800D4F258 /* Individual_I.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Individual_I.cpp; sourceTree = "<group>"; };
@@ -41,17 +43,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				485CC3711FD326EB0008133F /* libboost_serialization.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		485CC36F1FD326EB0008133F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				485CC3701FD326EB0008133F /* libboost_serialization.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		48C1DB671FCEF4DB00832CB4 = {
 			isa = PBXGroup;
 			children = (
 				48C1DB721FCEF4DB00832CB4 /* GeneticAlgorithm_1_origin */,
 				48C1DB711FCEF4DB00832CB4 /* Products */,
+				485CC36F1FD326EB0008133F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -236,6 +248,8 @@
 		48C1DB781FCEF4DB00832CB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib/;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -243,6 +257,8 @@
 		48C1DB791FCEF4DB00832CB4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib/;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

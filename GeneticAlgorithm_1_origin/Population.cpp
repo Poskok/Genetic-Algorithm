@@ -8,6 +8,7 @@
 
 #include "Population.hpp"
 #include "Individual.hpp"
+#include <boost/shared_ptr.hpp>
 
 using namespace std;
 
@@ -22,7 +23,7 @@ void Population::CreateNewPopulation(int populationSize, int chromosomeLength)
 
 
 
-bool Population::CompareIndividuals(Individual* individual1, Individual* individual2)
+bool Population::CompareIndividuals(boost::shared_ptr<Individual> individual1, boost::shared_ptr<Individual> individual2)
 {
     int fitness1 = individual1->GetFitness();
     int fitness2 = individual2->GetFitness();

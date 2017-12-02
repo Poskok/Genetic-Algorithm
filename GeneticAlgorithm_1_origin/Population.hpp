@@ -13,9 +13,9 @@
 #include <vector>
 #include "Individual_I.hpp"
 #include "Individual.hpp"
+#include <boost/shared_ptr.hpp>
 
 using namespace std;
-
 
 class Population
 {
@@ -23,11 +23,11 @@ public:
     Population(vector<Individual> population) : population_(population) {}
     Population();
     void CreateNewPopulation(int populationSize, int chromosomeLength);
-    Individual * GetFittest(int offset);
+    boost::shared_ptr<Individual> GetFittest(int offset);
 private:
     vector<Individual> population_;
     double populationFitness = -1;
-    bool CompareIndividuals(Individual* individual1, Individual* individual2);
+    bool CompareIndividuals(boost::shared_ptr<Individual> individual1, boost::shared_ptr<Individual> individual2);
 };
 
 #endif /* Population_hpp */
