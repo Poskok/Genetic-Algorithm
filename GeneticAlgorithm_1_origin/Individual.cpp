@@ -31,7 +31,7 @@ Individual::Individual(int chromosomeLength)
     }
 }
 
-int Individual::getFitness()
+int Individual::GetFitness()
 {
     return accumulate(chromosome_.begin(), chromosome_.end(), 0);;
 }

@@ -14,14 +14,14 @@
 #include "./Individual_I.hpp"
 using namespace std;
 
-class Individual : public Individual_I
+class Individual 
 {
 public:
     Individual(int chromosomeLength);
     Individual(vector<int> chromosomes):
                         chromosome_(chromosomes) {}
     vector<int> getChromosomes();
-    int getFitness();
+    int GetFitness();
 private:
     vector<int> chromosome_;
     double fitness = -1;

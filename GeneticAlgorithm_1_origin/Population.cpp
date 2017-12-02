@@ -8,9 +8,9 @@
 
 #include "Population.hpp"
 #include "Individual.hpp"
-#include "Individual_I.hpp"
 
 using namespace std;
+
 
 void Population::CreateNewPopulation(int populationSize, int chromosomeLength)
 {
@@ -18,6 +18,26 @@ void Population::CreateNewPopulation(int populationSize, int chromosomeLength)
     {
         population_.push_back( *new Individual(chromosomeLength) );
     }
+};
+
+
+
+bool Population::CompareIndividuals(Individual* individual1, Individual* individual2)
+{
+    int fitness1 = individual1->GetFitness();
+    int fitness2 = individual2->GetFitness();
+    bool result;
+    if ( fitness1 > fitness2 )
+    {
+        result = true;
+    }
+    else
+    {
+        result = false;
+    }
+    return result;
 }
+
+
 
 

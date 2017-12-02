@@ -27,6 +27,7 @@ public:
 private:
     vector<Individual> population_;
     double populationFitness = -1;
+    bool CompareIndividuals(Individual* individual1, Individual* individual2);
 };
 
 #endif /* Population_hpp */
