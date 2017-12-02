@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <vector>
 #include "Individual_I.hpp"
+#include "Individual.hpp"
 
 using namespace std;
 
@@ -19,10 +20,12 @@ using namespace std;
 class Population
 {
 public:
-    Population(int populationSize);
-    Population(int populationSize, int chromosomeLength);
+    Population(vector<Individual> population) : population_(population) {}
+    Population();
+    void CreateNewPopulation(int populationSize, int chromosomeLength);
+    Individual * GetFittest(int offset);
 private:
-    vector<Individual_I> population_;
+    vector<Individual> population_;
     double populationFitness = -1;
 };
 

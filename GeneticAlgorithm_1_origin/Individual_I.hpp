@@ -18,6 +18,7 @@ class Individual_I
 {
 public:
     virtual vector<int> getChromosomes() = 0;
+    virtual int getFitness() = 0;
 };
 
 #endif /* Individual_I_hpp */

@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <vector>
 #include <random>
+#include <numeric>
 using namespace std;
 
 Individual::Individual(int chromosomeLength)
@@ -28,6 +29,11 @@ Individual::Individual(int chromosomeLength)
             chromosome_[gene] = 1;
         }
     }
+}
+
+int Individual::getFitness()
+{
+    return accumulate(chromosome_.begin(), chromosome_.end(), 0);;
 }
 
 vector<int> Individual::getChromosomes()

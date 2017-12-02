@@ -21,6 +21,7 @@ public:
     Individual(vector<int> chromosomes):
                         chromosome_(chromosomes) {}
     vector<int> getChromosomes();
+    int getFitness();
 private:
     vector<int> chromosome_;
     double fitness = -1;
