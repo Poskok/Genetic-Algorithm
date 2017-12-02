@@ -7,3 +7,17 @@
 //
 
 #include "Population.hpp"
+#include "Individual.hpp"
+#include "Individual_I.hpp"
+
+using namespace std;
+
+void Population::CreateNewPopulation(int populationSize, int chromosomeLength)
+{
+    for ( int i = 0; i < populationSize; i++ )
+    {
+        population_.push_back( *new Individual(chromosomeLength) );
+    }
+}
+
+
